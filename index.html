@@ -17,7 +17,7 @@
         <nav class="nav">
             <ul class="nav-list list">
                 <li class="nav-item">
-                    <a class="nav-link link" href="./index.html">Студия</a>
+                    <a class="nav-link link active" href="./index.html">Студия</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link" href="./portfolio.html">Портфолио</a>
@@ -29,7 +29,7 @@
         </nav>
         <ul class="header-contact list">
             <li class="contact-container">
-                <a class="contact-link link" href="mailto:info@devstudio.com">
+                <a class="contact-link active link" href="mailto:info@devstudio.com">
                     <svg class="contact-icon" width="16px" height="12px">
                         <use href="./images/icons.svg#icon-Envelope"></use>
                     </svg>
@@ -397,32 +397,17 @@
         </div>
        </footer>
 
-       <div class="backdrop is-hidden">
-         <div class="modal" data-modal>
+       <div class="backdrop  is-hidden" data-modal>
+         <div class="modal">
             <button class="modal-btn" data-modal-close>
-                <svg class="close-btn" weight="11px" height="11px">
+                <svg class="close-btn" width="11px" height="11px">
                      <use href="./images/icons.svg#icon-close"></use>
                 </svg>
          </div>
         </button> 
        </div>
 
-
-
-    <script src="./js/modal.js">
-        const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
-        };
-
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-
-        function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-        }
-    </script>   
+    <script src="./js/modal.js"> </script>   
 
 </body>
 </html>
