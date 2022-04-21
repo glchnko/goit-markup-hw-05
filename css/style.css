@@ -677,8 +677,6 @@ h1, h2, h3, p {
 .project-item-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-
-
 }
 
 .project-overlay{
@@ -688,7 +686,7 @@ h1, h2, h3, p {
 
     background-color: rgba(33, 150, 243, 0.9);
     position: absolute;
-    bottom: 110px;
+    bottom: 0px;
     
     opacity: 0;
     transform: translateY(100%);
@@ -696,7 +694,8 @@ h1, h2, h3, p {
     
 }
 
-.project-item-link:hover .project-overlay{
+.project-wrapper:hover .project-overlay,
+.project-wrapper:focus .project-overlay{
     opacity: 1;
     transform: translateY(0);
 }
