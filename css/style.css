@@ -694,8 +694,8 @@ h1, h2, h3, p {
     
 }
 
-.project-wrapper:hover .project-overlay,
-.project-wrapper:focus .project-overlay{
+.project-item-link:hover .project-overlay,
+.project-item-link:focus .project-overlay{
     opacity: 1;
     transform: translateY(0);
 }
